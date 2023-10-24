@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: cursive;
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+button {
+    background-color:crimson;
+    height: 70px;
+    width: 200px;
+}
