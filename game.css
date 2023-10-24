@@ -2,3 +2,27 @@
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+#title {
+    grid-column: span 3;
+    text-align: center;
+}
+
+#box {
+    display: flex;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px;
+}
+
+#game {
+    grid-column: span 3;
+}
+
+.cards {
+    text-align: center;
+    padding: 10px;
+}
