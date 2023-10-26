@@ -1,22 +1,32 @@
 body {
-    background-color: black;
+    background-color: #6CCFF6;
 }
 
 h1 {
+    text-align: center;
     font-family: cursive;
-    color: white;
+    color: #FFFFFC;
 }
 h2{
-    color: white;
+    text-align: center;
+    color: #FFFFFC;
 }
 h3{
-    color: white;
+    text-align: center;
+    color: #FFFFFC;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button {
+    border-radius: 500px;
+    border: 2px solid #757780;
     font-family: cursive;
     font: optional;
     color: blue;
-    background-color:crimson;
+    background-color: #98CE00;
     height: 70px;
     width: 200px;
 }
