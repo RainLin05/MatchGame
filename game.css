@@ -33,6 +33,11 @@ h1 {
 
 .cards {
     text-align: center;
+
+}
+
+.cards:hover {
+    box-shadow: ;
 }
 
 #box {
@@ -40,10 +45,15 @@ h1 {
 }
 
 button {
+    text-align: center;
     font-size: 40px;
     height: 60px;
     width: 200px;
     border-radius: 50px;
     border: 2px solid #757780;
     background-color: #98CE00;
+}
+
+#score {
+    text-align: center;
 }
