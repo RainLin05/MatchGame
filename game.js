@@ -1,3 +1,10 @@
+function intialize() {
+  const birds = [];
+  shuffle[birds];
+
+  
+}
+
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
   
@@ -11,11 +18,12 @@ function shuffle(array) {
     }
   
     return array;
-  }
+}
   
   var arr = [1, 2, 3 , 4, 5, 6, 7, 8];
   shuffle(arr);
-let changeImg = () => {
-    console.log("aaaaaa")
-    document.getElementById("1").querySelector("img").src="bird.jpg";
+
+  let changeImg = () => {
+      console.log("aaaaaa")
+      document.getElementById("1").querySelector("img").src="bird.jpg";
 }
