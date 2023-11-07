@@ -33,7 +33,9 @@ h1 {
 
 .cards {
     text-align: center;
-
+    width: 180px;
+    height: 254px;
+    object-fit: contain;
 }
 
 .cards:hover {

@@ -1,10 +1,6 @@
-function intialize() {
-  const birds = [];
-  shuffle[birds];
-  let count = 0;
-
-
-}
+var birds = ["bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png","bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png"];
+let count = 0;
+var newBirds = shuffle(birds);
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -26,5 +22,5 @@ function shuffle(array) {
 
 let changeImg = (card) => {
       console.log("aaaaaa")
-      document.getElementById(`${card}`).querySelector("img").src=`${birds[card]}`;
+      document.getElementById(`${card}`).querySelector("img").src=`${newBirds[card]}`;
 }
