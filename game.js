@@ -1,4 +1,4 @@
-var birds = ["bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png","bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png"];
+var birds = ["birb0.jpg","birb1.jpg","birb2.jpg","birb3.jpg","birb4.jpg","birb5.jpg","birb6.jpg","birb7.jpg","bird8.jpeg","birb0.jpg","birb1.jpg","birb2.jpg","birb3.jpg","birb4.jpg","birb5.jpg","birb6.jpg","birb7.jpg","bird8.jpeg"];
 let count = 0;
 let score = 0;
 var newBirds = shuffle(birds);
