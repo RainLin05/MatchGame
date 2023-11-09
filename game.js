@@ -1,6 +1,8 @@
 var birds = ["bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png","bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png"];
 let count = 0;
 var newBirds = shuffle(birds);
+arg1 = ""
+arg2 = ""
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -23,4 +25,22 @@ function shuffle(array) {
 let changeImg = (card) => {
       console.log("aaaaaa")
       document.getElementById(`${card}`).querySelector("img").src=`${newBirds[card]}`;
+      count++;
+      if(arg1 == newBirds[card]) {
+        console.log("adhhf")
+      }
+      arg1 = newBirds[card]
+
+      if (count==2) {
+        reset();
+      }
+}
+
+let reset = () => {
+  console.log("222")
+  count = 0;
+  const images = document.querySelectorAll("img");
+  images.forEach((img)=> {
+    img.src = "cardback.png"; 
+  })
 }
