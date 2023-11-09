@@ -1,8 +1,10 @@
 var birds = ["bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png","bird0.jpeg","bird1.jpeg","bird2.jpeg","bird3.png","bird4.jpeg","bird5.jpeg","bird6.png","bird7.png"];
 let count = 0;
+let score = 0;
 var newBirds = shuffle(birds);
-arg1 = ""
-arg2 = ""
+arg1 = "";
+arg2 = "";
+
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
@@ -23,17 +25,19 @@ function shuffle(array) {
   shuffle(arr);
 
 let changeImg = (card) => {
-      console.log("aaaaaa")
-      document.getElementById(`${card}`).querySelector("img").src=`${newBirds[card]}`;
-      count++;
-      if(arg1 == newBirds[card]) {
-        console.log("adhhf")
-      }
-      arg1 = newBirds[card]
+  score++;
+  if(arg1 == newBirds[card]) {
+    
+  }
+  arg1 = newBirds[card]
 
-      if (count==2) {
-        reset();
-      }
+  if (count==2) {
+    reset();
+  }
+  console.log("aaaaaa")
+  document.getElementById(`${card}`).querySelector("img").src=`${newBirds[card]}`;
+  count++;
+      
 }
 
 let reset = () => {
@@ -43,4 +47,8 @@ let reset = () => {
   images.forEach((img)=> {
     img.src = "cardback.png"; 
   })
+}
+
+let scoreKeep = () => {
+  document.getElementById("score").innerHTML = `Score: ${score}`;
 }
