@@ -25,9 +25,10 @@ function shuffle(array) {
   shuffle(arr);
 
 let changeImg = (card) => {
-  score++;
   if(arg1 == newBirds[card]) {
-    
+    abc = newBirds.indexOf(arg1);
+    document.getElementById(`${abc}`).querySelector("img").id="1";
+    document.getElementById(card).querySelector("img").id="1";
   }
   arg1 = newBirds[card]
 
@@ -45,10 +46,17 @@ let reset = () => {
   count = 0;
   const images = document.querySelectorAll("img");
   images.forEach((img)=> {
-    img.src = "cardback.png"; 
+    if (img.id == "") {
+      img.src = "cardback.png"; 
+    }
   })
 }
 
 let scoreKeep = () => {
+  score++;
   document.getElementById("score").innerHTML = `Score: ${score}`;
+}
+
+let completeReset = () => {
+  location.reload();
 }
